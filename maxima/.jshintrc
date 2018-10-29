@@ -1,0 +1,11 @@
+{
+  "undef": true,
+  "unused": true,
+  "browser": true,
+  "devel": true,
+  "multistr": true,
+  "globals": {
+    "$": false,
+    "ghost_blog_url": false
+   }
+}
