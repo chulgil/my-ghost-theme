@@ -1,0 +1,21 @@
+/*------------------------------------*\
+  Trumbs > Image
+\*------------------------------------*/
+
+/**
+ * Image effect.
+ * https://bennettfeely.com/image-effects/
+ */
+
+.u-pencil-effect {
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+  /* Add the blur effect */
+  opacity: 0.1;
+
+}

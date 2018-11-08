@@ -122,7 +122,7 @@
   display: flex;
   align-items: center;
   line-height: 1;
-  padding: $base-spacing-unit $base-spacing-unit $base-spacing-unit double($base-spacing-unit);
+  padding: ($base-spacing-unit/2) ($base-spacing-unit/2) ($base-spacing-unit/2) double($base-spacing-unit);
   background-color: $bg-gray;
   border-radius: $global-border-radius;
 
@@ -159,6 +159,7 @@
     display: block;
     width: quadruple($base-spacing-unit);
     height: triple($base-spacing-unit);
+    border-radius: $img-round-s;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

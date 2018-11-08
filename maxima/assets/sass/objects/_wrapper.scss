@@ -10,10 +10,12 @@
  * Sticky footer
  */
 .c-off-canvas-container {
-  max-width: 980px;
   display: flex;
   min-height: 100vh;
   flex-direction: column;
 
-  .o-wrapper { flex: 1 0 auto; }
+  .o-wrapper {
+    flex: 1 0 auto;
+    background-color: $bg-gray;
+  }
 }

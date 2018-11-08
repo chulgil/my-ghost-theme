@@ -1,0 +1,78 @@
+/*------------------------------------*\
+  Objects > Timeline
+\*------------------------------------*/
+
+//<div class="o-timeline clearfix">
+//<div class="o-timeline__left">
+//<h5 class="o-timeline__period">
+//<time class='o-timeline__date' datetime='{{ date format='YYYY-MM-DD' }}'>{{ date format='DD MMM YYYY' }}</time>
+//</h5>
+//<span>University of Studies</span>
+//</div>
+//<div class="o-timeline__divider"></div>
+//<div class="o-timeline__right">
+//<h4 class="o-timeline__title">Fronted Development</h4>
+//<p>Description</p>
+//</div>
+//</div>
+
+.o-timeline {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  padding-bottom: double($base-spacing-unit);
+  background: $bg-white;
+
+  &__period {
+    padding:5px;
+  }
+
+  &__left {
+    width: 30%;
+    display: table-cell;
+    padding-right: ($base-spacing-unit / 2);
+    min-height: 100%;
+    text-align: right;
+    vertical-align: top;
+  }
+
+  &__right {
+    width: 70%;
+    display: table-cell;
+
+    padding-right: ($base-spacing-unit / 2);
+    padding-left: ($base-spacing-unit / 2);
+    vertical-align: top;
+  }
+
+  &__date {
+    display: block;
+    font-size: $font-size-small;
+    font-family: $font-sans-serif;
+    line-height: $line-height-small;
+    text-transform: uppercase;
+    color: $color-gray;
+  }
+
+  &__divider {
+    position: absolute;
+    top: 0;
+    left: 30%;
+    bottom: 0;
+    width: 1px;
+    background-color: $bg-gray;
+  }
+  &__divider:after {
+    content: '';
+    display: block;
+    margin-top: 7px;
+    width: 11px;
+    height: 11px;
+    margin-left: -5px;
+    border-radius: 5px;
+    border: 2px solid $color-brand;
+    background-color: $bg-white;
+  }
+}
+

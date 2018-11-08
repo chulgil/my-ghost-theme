@@ -1,0 +1,34 @@
+<div class='js-grid__col o-grid__col o-grid__col--4-4-m o-grid__col--4-4-l {{ passed_class }}'>
+    <div class='c-post-item'>
+
+        <div class="c-post-item__left">
+            <a href='{{ url }}' class='c-post-item__image-link'
+                {{#if feature_image}}
+                    style="background-image: url('{{ feature_image }}')">
+                {{else}}
+                >
+                    <span class="u-center">{{tags limit="1" autolink="false"}}</span>
+                {{/if}}
+
+            </a>
+        </div>
+
+        <div class="c-post-item__right">
+
+            <a href='{{ url }}' class='c-post-item__info {{# unless feature_image}} c-post-item__info--no-image {{/unless}}'>
+                <h2 class='c-post-item__title'>{{ title }}</h2>
+
+                <p class='c-post-item__excerpt u-font-small'>
+                    {{ excerpt characters='160' }}
+                </p>
+
+                <time class='c-post-item__date' datetime='{{ date format='YYYY-MM-DD' }}'>{{ date format='DD MMM YYYY' }} / {{reading_time}}</time>
+            </a>
+
+
+        </div>
+
+
+
+    </div>
+</div>

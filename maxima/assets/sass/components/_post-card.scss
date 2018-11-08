@@ -5,9 +5,11 @@
 .c-post-card {
   overflow: hidden;
   transform: translateX(0);
+  margin: 0 auto;
   margin-bottom: double($base-spacing-unit);
   background-color: $bg-gray;
   border-bottom: 1px solid $color-border;
+  max-width: $global-post-max-width;
 
   &__image-link {
     display: block;
