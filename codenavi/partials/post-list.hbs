@@ -1,0 +1,27 @@
+<div class='js-grid__col o-grid__col o-grid__col--4-4-m o-grid__col--4-4-l {{ passed_class }}'>
+    <div class='c-post-list'>
+
+        <a href='{{ url }}' class='c-post-list__info {{# unless feature_image}} c-post-list__info--no-image {{/unless}}'>
+            <h2 class='c-post-list__title'>{{ title }}</h2>
+
+            <p class='c-post-list__excerpt u-font-small'>
+                {{ excerpt characters='140' }}
+            </p>
+
+            <time class='c-post-list__date' datetime='{{ date format='YYYY-MM-DD' }}'>{{ date format='DD MMM YYYY' }} / {{reading_time}}</time>
+
+        </a>
+
+        {{#if feature_image}}
+            <a href='{{ url }}' class='c-post-list__image-link'>
+                {{#if featured}}
+                <span class="c-post-list__mark" title='{{t "Featured Post" }}'>
+                    <span class='c-post-list__featured-icon' data-icon='ei-star' data-size='s'></span>
+                </span>
+                {{/if}}
+                <img src='{{ feature_image }}' class='js-fadein c-post-list__image' alt='{{ title }}'>
+            </a>
+        {{/if}}
+
+    </div>
+</div>

@@ -1,0 +1,21 @@
+/*------------------------------------*\
+  Components > Social Navigation
+\*------------------------------------*/
+
+.c-social-nav {
+  line-height: 1;
+  margin-bottom: $base-spacing-unit + quarter($base-spacing-unit);
+
+  &__item {
+    display: inline-block;
+  }
+
+  &__icon {
+    fill: $color-text;
+    vertical-align: middle;
+
+    @include attention() {
+      fill: $color-brand;
+    }
+  }
+}

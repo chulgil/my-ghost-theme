@@ -1,0 +1,29 @@
+{
+  "name": "vncodenavi",
+  "version": "1.0.0",
+  "keywords": [
+    "ghost-theme"
+  ],
+  "description": "Minimal Blog & Magazine Ghost Theme",
+  "dependencies": {
+    "concat": "^1.0.0",
+    "evil-icons": "^1.10.1",
+    "fs": "0.0.2",
+    "fs-extra": "^7.0.1",
+    "lunr": "^0.7.0",
+    "lunr-languages": "^1.0.0",
+    "prismjs": "^1.15.0",
+    "run-sequence": "^2.2.0"
+  },
+  "author": {
+    "name": "vncodenavi",
+    "email": "vncodenavi@gmail.com",
+    "url": "https://vncodenavi.com/"
+  },
+  "config": {
+    "posts_per_page": 16
+  },
+  "browser": {
+    "vue": "vue/dist/vue.runtime.common.js"
+  }
+}

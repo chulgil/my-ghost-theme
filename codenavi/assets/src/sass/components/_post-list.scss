@@ -1,0 +1,97 @@
+/*------------------------------------*\
+  Components > Post list
+\*------------------------------------*/
+
+.c-post-list {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+
+  margin: 0 auto;
+  padding-top: $base-spacing-unit;
+  padding-bottom: $base-spacing-unit;
+  border-bottom: 1px solid $color-border;
+  max-width: $global-post-max-width;
+
+  &__info {
+    width:70%;
+    display: table-cell;
+    padding-right: ($base-spacing-unit / 2);
+    text-align: left;
+    vertical-align: middle;
+
+    overflow: hidden;
+    transform: translateX(0);
+
+    background-color: $bg-white;
+    &--no-image {
+      padding-top: 0;
+    }
+
+    &:focus, &:hover {
+      text-decoration: none;
+      color: $color-text;
+    }
+  }
+
+  &__title {
+    margin-bottom: half($font-size-base);
+    font-size: $font-size-base;
+    font-weight: $font-weight-regular;
+    line-height: $line-height-medium;
+    font-family: $font-serif;
+    transition: $global-transition;
+  }
+
+  &__date {
+    display: block;
+    margin-bottom: quarter($line-height-base);
+    font-size: $font-size-tiny;
+    font-family: $font-sans-serif;
+    line-height: $line-height-small;
+    text-transform: uppercase;
+    color: $color-gray;
+  }
+
+  &__excerpt {
+    margin-bottom: half($font-size-base);
+    word-break: break-word;
+    word-wrap: break-word;
+    font-family: $font-sans-serif;
+  }
+
+  &:hover {
+    .c-post-list__title {
+      color: $color-brand;
+    }
+  }
+
+  &__image-link {
+    width: 30%;
+    min-height:120px;
+    display: table-cell;
+    vertical-align: middle;
+    background-color: $bg-white;
+  }
+
+  &__image-link img {
+    height:100px;
+    width:150px;
+    border-radius: $img-round-s;
+    border: solid 1px rgba(0, 0, 0, .2);
+    float:right;
+  }
+
+  &__mark {
+    position: absolute;
+    background-color: $color-brand;
+    line-height: 0.8em;
+    right:0px;
+  }
+
+  &__featured-icon {
+    fill: $color-white;
+  }
+
+}

@@ -15,7 +15,8 @@
       plumber      = require('gulp-plumber'),
       gutil        = require('gulp-util'),
       replace      = require('gulp-replace'),
-      fs           = require('fs');
+      fs           = require('fs'),
+      webpack      = require('webpack-stream');
 
   var onError = function( err ) {
     console.log('An error occurred:', gutil.colors.magenta(err.message));
@@ -69,6 +70,7 @@
       .pipe(concat('app.js'))
       .pipe(rename({suffix: '.min'}))
       .pipe(uglify())
+      .pipe(webpack(require('./webpack.config')))
       .pipe(gulp.dest('./assets/js'));
   });
 

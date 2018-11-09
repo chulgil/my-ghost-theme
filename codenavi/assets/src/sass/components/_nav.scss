@@ -1,0 +1,31 @@
+/*------------------------------------*\
+  Components > Site Navigation
+\*------------------------------------*/
+
+.c-nav {
+  &__item {
+    font-size: $font-size-small;
+    font-family: $font-sans-serif;
+
+    &:not(:last-child) {
+      margin-bottom: quarter($base-spacing-unit);
+    }
+  }
+
+  &__link {
+    display: block;
+
+    &--current {
+      color: $color-brand;
+
+      .home-template &:not(:hover) {
+        color: $color-link;
+      }
+    }
+
+    @include attention() {
+      color: $color-brand;
+      text-decoration: none;
+    }
+  }
+}
